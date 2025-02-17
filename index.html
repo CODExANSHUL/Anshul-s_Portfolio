@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshul's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="body">
+    <nav class="bg-yellow-600 p-4 shadow-md flex justify-between items-center">
+        <a href="#" class="text-black text-xl font-bold">Portfolio</a>
+
+        <button class="text-black md:hidden" onclick="toggleMenu()">☰</button>
+
+        <ul id="nav-links" class="hidden md:flex space-x-6">
+            <li><a href="#" class="text-black hover:text-white">Home</a></li>
+            <li><a href="#" class="text-black hover:text-white">About</a></li>
+            <li><a href="#" class="text-black hover:text-white">Projects</a></li>
+            <li><a href="#" class="text-black hover:text-white">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="flex">
+        <div class="flex-1 w-40 mx-3 my-3 p-4">
+            <h1 class="font-bold text-5xl m-5 px-4">
+                Anshul Rokade
+            </h1>
+            <h2 class="text-3xl mx-5 px-4">
+                Software Developer
+            </h2>
+            <h3 class="font-bold text-xl mt-6 -mb-4 px-2">
+                Skills
+            </h3>
+            <l class="text-xl mx-3  px-2">
+                <li>HTML, CSS</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>MySQL</li>
+                <li>C++ Programming(OOP)</li>
+                <li>DSA(C++)</li>
+                <li>Python (Matplotlib, Pandas, NumPy, SciPy, TensorFlow)</li>
+            </l>
+        </div>
+
+        <div class="flex-1 w-40 h-auto ">
+            <img class="" src="p2.png">
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>
+                Biography
+            </h2>
+            <p>
+                Myself Anshul Rokade currently pursuing my graduation from Vishwakarma University, Pune.
+                <br>I am Frontend Developer, mainly using ReactJS Framework. 
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>
